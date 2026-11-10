@@ -1,0 +1,30 @@
+2026-11-10 21:59:46.489 INFO  o.example.commands.AggregateCommand - Start aggregation: sources=[moex, weather, exchangerate], output=data.json, format=json, mode=CREATE
+2026-11-10 21:59:46.491 INFO  org.example.core.Aggregator - Fetching source: moex
+2026-11-10 21:59:48.327 INFO  org.example.core.Aggregator - Source moex returned 3 records
+2026-11-10 21:59:48.328 INFO  org.example.core.Aggregator - Fetching source: weather
+2026-11-10 21:59:48.328 INFO  o.example.sources.SevenTimerSource - Calling 7Timer: https://www.7timer.info/bin/api.pl?lon=30.3351&lat=59.9343&product=civil&output=json
+2026-11-10 21:59:49.366 INFO  o.example.sources.SevenTimerSource - Got 15201 bytes from 7Timer
+2026-11-10 21:59:49.373 INFO  org.example.core.Aggregator - Source weather returned 1 records
+2026-11-10 21:59:49.374 INFO  org.example.core.Aggregator - Fetching source: exchangerate
+2026-11-10 21:59:50.861 INFO  org.example.core.Aggregator - Source exchangerate returned 1 records
+2026-11-10 21:59:50.947 INFO  org.example.storage.JsonStorage - Saved 5 records to data.json (mode=CREATE, format=json)
+2026-11-10 21:59:57.930 INFO  org.example.commands.ReadCommand - Read 5 records from data.json
+2026-11-10 22:00:03.780 INFO  org.example.commands.ReadCommand - Read 3 records from data.json
+2026-11-10 22:00:16.064 INFO  org.example.commands.ReadCommand - Read 5 records from data.json
+2026-11-10 22:02:06.295 INFO  o.example.commands.AggregateCommand - Start aggregation: sources=[moex, weather, exchangerate], output=data.csv, format=csv, mode=CREATE
+2026-11-10 22:02:06.297 INFO  org.example.core.Aggregator - Fetching source: moex
+2026-11-10 22:02:06.809 INFO  org.example.core.Aggregator - Source moex returned 3 records
+2026-11-10 22:02:06.809 INFO  org.example.core.Aggregator - Fetching source: weather
+2026-11-10 22:02:06.810 INFO  o.example.sources.SevenTimerSource - Calling 7Timer: https://www.7timer.info/bin/api.pl?lon=30.3351&lat=59.9343&product=civil&output=json
+2026-11-10 22:02:07.063 INFO  o.example.sources.SevenTimerSource - Got 15201 bytes from 7Timer
+2026-11-10 22:02:07.070 INFO  org.example.core.Aggregator - Source weather returned 1 records
+2026-11-10 22:02:07.070 INFO  org.example.core.Aggregator - Fetching source: exchangerate
+2026-11-10 22:02:07.431 INFO  org.example.core.Aggregator - Source exchangerate returned 1 records
+2026-11-10 22:02:07.435 INFO  org.example.storage.CsvStorage - Saved 5 records to data.csv (mode=CREATE, format=csv)
+2026-11-10 22:02:29.508 INFO  org.example.commands.ReadCommand - Read 5 records from data.csv
+2026-11-10 22:02:36.798 INFO  org.example.commands.ReadCommand - Read 3 records from data.csv
+2026-11-10 22:02:47.814 INFO  o.example.commands.AggregateCommand - Start aggregation: sources=[exchangerate], output=data.csv, format=csv, mode=APPEND
+2026-11-10 22:02:47.816 INFO  org.example.core.Aggregator - Fetching source: exchangerate
+2026-11-10 22:02:48.469 INFO  org.example.core.Aggregator - Source exchangerate returned 1 records
+2026-11-10 22:02:48.475 INFO  org.example.storage.CsvStorage - Saved 6 records to data.csv (mode=APPEND, format=csv)
+2026-11-10 22:02:58.163 INFO  org.example.commands.ReadCommand - Read 6 records from data.csv

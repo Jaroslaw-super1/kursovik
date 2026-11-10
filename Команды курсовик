@@ -1,0 +1,13 @@
+./gradlew run --args="--sources=moex,weather,exchangerate --output=data.json --format=json --mode=create"
+./gradlew run --args="--read=data.json"
+./gradlew run --args="--read=data.json --source=moex"
+
+
+./gradlew run --args="--sources=moex,weather,exchangerate --output=data.csv --format=csv --mode=create"
+./gradlew run --args="--read=data.csv"
+./gradlew run --args="--read=data.csv --source=moex"
+
+
+
+./gradlew run --args="--sources=exchangerate --output=data.csv --format=csv --mode=append"
+

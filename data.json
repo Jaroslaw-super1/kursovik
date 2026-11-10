@@ -1,0 +1,77 @@
+[ {
+  "source" : "moex",
+  "fetchedAt" : "2026-11-10T18:59:47.620517393Z",
+  "fields" : {
+    "VALTODAY" : null,
+    "NUMTRADES" : 61,
+    "LAST" : 83.65,
+    "BIDDEPTHT" : null,
+    "OFFER" : null,
+    "OPEN" : 83,
+    "UPDATETIME" : "21:44:42",
+    "VOLTODAY" : null,
+    "BID" : null,
+    "SECID" : "USD000UTSTOM",
+    "OFFERDEPTHT" : null,
+    "ticker" : "USD000UTSTOM",
+    "change" : 0.6500000000000057
+  }
+}, {
+  "source" : "moex",
+  "fetchedAt" : "2026-11-10T18:59:48.308121644Z",
+  "fields" : {
+    "VALTODAY" : null,
+    "NUMTRADES" : 47953,
+    "LAST" : 12.422,
+    "BIDDEPTHT" : null,
+    "OFFER" : null,
+    "OPEN" : 12.3725,
+    "UPDATETIME" : "19:00:00",
+    "VOLTODAY" : null,
+    "BID" : null,
+    "SECID" : "CNYRUB_TOM",
+    "OFFERDEPTHT" : null,
+    "ticker" : "CNYRUB_TOM",
+    "change" : 0.0495000000000001
+  }
+}, {
+  "source" : "moex",
+  "fetchedAt" : "2026-11-10T18:59:48.327800479Z",
+  "fields" : {
+    "VALTODAY" : null,
+    "NUMTRADES" : 7730,
+    "LAST" : 10840,
+    "BIDDEPTHT" : null,
+    "OFFER" : null,
+    "OPEN" : 10998.5,
+    "UPDATETIME" : "19:00:01",
+    "VOLTODAY" : null,
+    "BID" : null,
+    "SECID" : "GLDRUB_TOM",
+    "OFFERDEPTHT" : null,
+    "ticker" : "GLDRUB_TOM",
+    "change" : -158.5
+  }
+}, {
+  "source" : "weather",
+  "fetchedAt" : "2026-11-10T18:59:49.373758476Z",
+  "fields" : {
+    "city" : "Saint Petersburg",
+    "init" : "2026111012",
+    "timepoint" : 3,
+    "temperature" : 2,
+    "windSpeed" : 3,
+    "windDirection" : "SW",
+    "cloudCover" : 6,
+    "precipitation" : "none"
+  }
+}, {
+  "source" : "exchangerate",
+  "fetchedAt" : "2026-11-10T18:59:50.860988404Z",
+  "fields" : {
+    "timestamp" : 1794333600,
+    "usdRub" : 83.1760,
+    "cnyRub" : 12.4632,
+    "xauRubPerGram" : 10746.50
+  }
+} ]
